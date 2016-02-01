@@ -1,0 +1,25 @@
+{
+  "name": "as-popup",
+  "description": "Angular JS draggable, resizeable, minimizeable popup",
+  "main": [
+    "dist/index.min.js",
+    "dist/templates.min.js",
+    "dist/style.min.css"
+  ],
+  "authors": [
+    "Alexandr Sizemov <alexandr.sizemov@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "popup",
+    "draggable",
+    "resizeable",
+    "minimizeable"
+  ],
+  "dependencies": {
+    "angular": "^1.4.x"
+  },
+  "moduleType": [],
+  "homepage": ""
+}

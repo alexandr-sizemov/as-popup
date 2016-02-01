@@ -1,0 +1,29 @@
+{
+  "name": "as-popup",
+  "version": "0.1.0",
+  "description": "Angular JS draggable, resizeable, minimizeable popup",
+  "main": [
+    "dist/index.min.js",
+    "dist/templates.min.js",
+    "dist/style.min.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs",
+    "popup",
+    "draggable",
+    "resizeable",
+    "minimizeable"
+  ],
+  "author": "Alexandr Sizemov <alexandr.sizemov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-angular-templatecache": "1.8.0",
+    "gulp-htmlmin": "1.3.0",
+    "gulp-jshint": "2.0.0",
+    "jshint": "2.9.1",
+    "jshint-stylish": "2.1.0"
+  }
+}

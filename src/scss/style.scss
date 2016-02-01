@@ -1,0 +1,79 @@
+$color-base: white;
+$color-background: #FFFFFF;
+$color-font: #7B7B7B;
+$popup-padding: 10px;
+$header-height: 48px;
+$footer-height: 24px;
+$border-radius: 6px;
+
+div.as-popup{
+    border-radius:$border-radius;
+    border-top: $border-radius solid $color-base;
+    border-bottom: $border-radius solid $color-base;
+    min-height: 55px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 90;
+    box-shadow: 0px 0px 15px #333;
+    color: $color-font;
+    background: $color-background;
+    div.as-popup-header{
+        cursor: move;
+        height: $header-height;
+        padding: 0 $popup-padding;
+        .as-btn{
+            padding: 15px 2px;
+            float:right;
+            .close{
+                height: 16px;
+                width: 16px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAx0lEQVQ4T42TURXCMAxF7xzgZDgAHAwHTBkSwAGbA3CCAziPQ3ZCm5T1s+m7TfKSDjgBZ2ACjsCT9tkAF2APjB3wcu/vwKEBkfgGbE0jgH7erYBUYmAWQAFB+gYkEj9UhgA6LYjiP2kDH7FKNUALothSsxcr4AEZxHuy/OybWJoWlaM3lTjKwLIoa9Z9aHFUQiS2LCtI2cSo2xKnFnsbM6sESOfEBin1+d+cRKMcdjsZtqlcpkxsTawsFsDWeQaGlet8/S7g+AZpLkJuTcQKFQAAAABJRU5ErkJggg==);
+            }
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid white;
+            margin-bottom: 5px;
+        }
+        .title {
+            span.icon-title {
+                float: left;
+                margin-right: 5px;
+            }
+        }
+    }
+    div.as-popup-body{
+        height: calc(100% - 62px);
+        overflow: auto;
+        padding:0 $popup-padding;
+    }
+}
+
+.as-popup.collapsed {
+    height: 50px !important;
+    transition: all 0.4s linear;
+}
+
+.as-popup.collapsed-add {
+    height: 50px !important;
+}
+
+.as-popup.collapsed-removed {
+    height: auto;
+}
+
+.as-popup.ui-resizable {
+    position: absolute;
+}
+
+// override jQuery UI resize handle
+.ui-icon, .ui-widget-content .ui-icon{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAAMklEQVR42mNgGLRAQUFBQklJ6T9ZmkD0ENBElB9xacJr8+DRhNWPxGrCsBldkBB/YAAAQ+UuKn95ScIAAAAASUVORK5CYII=)
+    no-repeat center right;
+    height: 15px;
+
+}
